@@ -1,0 +1,13 @@
+EVALUATE
+
+  ADDCOLUMNS(
+    CROSSJOIN(
+      VALUES(TABL1[column])
+      ,VALUES(TABL2[column])
+      )
+    ,"SUM OF SOMETHING"
+    ,SUM(TABLE[column])
+    
+  )
+)
+    
